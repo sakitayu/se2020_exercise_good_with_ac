@@ -1,0 +1,19 @@
+<div class="main_content">
+  <div>
+    <span class="card-number" id="msg_box"><%= @count %></span>
+  </div>
+  <a id="iine_button" class="button" ></a>
+</div>
+
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<script>
+  jQuery(document).ready(function(){
+    $("#iine_button").on('click',function(){
+      App.room.vote();
+    });
+  });
+
+</script>
